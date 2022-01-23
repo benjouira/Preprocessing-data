@@ -6,13 +6,13 @@ X_train = np.array([[ 1., -1.,  2.],
 scaler = preprocessing.StandardScaler().fit(X_train)
 print(scaler)
 
-scaler.mean_
-
-scaler.scale_
+print(scaler.mean_)
+     
+print(scaler.scale_)
 
 X_scaled = scaler.transform(X_train)
 X_scaled
 
 
-X_scaled.mean(axis=0)
-X_scaled.std(axis=0)
+print(X_scaled.mean(axis=0))
+print(X_scaled.std(axis=0))
