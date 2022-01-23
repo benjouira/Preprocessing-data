@@ -12,3 +12,7 @@ scaler.scale_
 
 X_scaled = scaler.transform(X_train)
 X_scaled
+
+
+X_scaled.mean(axis=0)
+X_scaled.std(axis=0)
